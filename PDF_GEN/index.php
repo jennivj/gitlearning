@@ -1,28 +1,14 @@
 <?php
- $con = mysqli_connect('localhost', 'root','','vivat');
+ $con = mysqli_connect('localhost', 'root','','');
  $dumpfile = "doc2/";
 if ( !file_exists($dumpfile) ) {mkdir($dumpfile,0777); echo "created";}
 else { 
 if ( !chmod($dumpfile,0777) ) echo "Unable to change $dumpfile permissions<p>";
-}
- 
-  
- 
-
- 
- 
-
- 
- 
- 
-
-
+} 
  
 $result = mysqli_query( $con,'SELECT * FROM `wp_users`  '); 
 if (!$result) die('Couldn\'t fetch records'); 
-$num_fields = mysqli_affected_rows ( $con); 
-
- 
+$num_fields = mysqli_affected_rows ( $con);  
 
  
 $headers = array();  $res= [];  $resultArr= [];
