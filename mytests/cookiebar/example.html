@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+	<head>
+	 <meta charset='utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+		<title>jquery.cookieBar </title>
+ 
+	
+			<script type="text/javascript" src="http://test.test/mytests/cookiebar/query.js"></script>
+				<script type="text/javascript" src="jquery.cookieBar.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+		 
+			
+			});
+		</script>
+		<link rel="stylesheet" type="text/css" href="cookieBar.css">
+		
+		<style type="text/css">
+		  
+		</style>
+	</head>
+	<body>
+	
+	<script type="text/javascript">
+	$(document).ready(function() {
+	   $('.cookie-message').cookieBar({ closeButton : '.my-close-button' });
+	  $('.cookie-message').on('my-close-button', function() { $(this).slideUp(); });
+	});
+</script>
+ 
+ 
+
+
+  <div class="fixed-top bg-info cookie-message pt-1 blue">
+    <p class="mb-1">This is an example of jQuery.cookieBar, here you'd put your message about how you use cookies.
+      <a class="btn btn-sm btn-warning cbca my-close-button" href="#">Accept</a>
+    </p>
+  </div> 
+	</body>
+</html>
