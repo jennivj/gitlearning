@@ -1,0 +1,30 @@
+        .notActive {
+            pointer-events: none;
+            cursor: default;
+            text-decoration: none;
+        }
+
+        .active a {
+            color: #000 !important;
+            background-color: #CCFFCC !important;
+
+        }
+
+        .avatar-pic {
+            width: 75px;
+        }
+
+        .btn-bs-file {
+            position: relative;
+        }
+
+        .btn-bs-file input[type="file"] {
+            position: absolute;
+            top: -9999999;
+             filter: alpha(opacity=0);
+            opacity: 0;  
+            width: 0;
+            height: 0;
+            outline: none;
+            cursor: inherit;
+        }
