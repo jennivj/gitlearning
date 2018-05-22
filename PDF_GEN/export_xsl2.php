@@ -1,6 +1,6 @@
 <?php
- //$con = mysqli_connect('localhost', 'root','','test');
-   $con = mysqli_connect('127.0.0.1', 'umm_zeitraum_usr','D5Jv8*qMwhV4iCP$knKY','umm_zeitraum');
+ $con = mysqli_connect('localhost', 'root','','test');
+ 
 
 
  $dumpfile = "doc2/";
